@@ -49,3 +49,25 @@
     border: 2px solid grey;
     font-size: 15px;
 }
+
+/*GRID DE POKEMONS ------------------------*/
+
+#mainPkmGrid{
+    position: absolute;
+    margin-top: 150px;
+    margin-left:  100px;
+    margin-right:  100px;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+}
+#mainPkmGrid article {
+    justify-items: center;
+    background-color: lightgray;
+    font-size: 30px;
+    width: 200px;
+}
