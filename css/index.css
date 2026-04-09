@@ -1,24 +1,32 @@
-header{
-    display: flex;
-    justify-content: space-between;
-    
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
 }
-.logo-container{
+
+.logo-container {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: start;
 }
-ul{
+
+nav {
+    justify-self: center;
+}
+
+nav ul {
     display: flex;
     gap: 50px;
+    list-style: none;
+    padding: 0;
 }
-nav ul li a, h1{
+
+nav ul li a {
     text-decoration: none;
     color: black;
-    
 }
-nav ul{
-    list-style-type: none
-}
-#IconoLogo{
-    width: 100px;
-    height: 100px;
+
+h1 {
+    color: black;
 }
