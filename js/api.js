@@ -12,7 +12,18 @@ const BASE_URL = 'https://pokeapi.co/api/v2';
  * @returns {Promise<Array<{name: string, url: string}>>}
  */
 async function fetchPokemonList() {
-    // TODO
+    try {
+        const response = await
+        fetch(`${BASE_URL}/pokemon?limit=151`);
+        if(!response.ok) {
+            throw new Error("Error al cargar");
+        }
+        const data = await response.json()
+        return data.results;
+    } catch (error) {
+        console.error(error)
+        return []
+    }
 }
 
 /**
