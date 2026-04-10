@@ -1,3 +1,41 @@
 body{
     background-color: lightgray;
 }
+#InfoPokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 100px;
+    padding: 20px;
+    min-height: 90vh;
+}
+article{
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+article p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.FotoPokemon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+.StatsPokemon{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.HabilidadesPokemon{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.MovimientosPokemon{
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+.EvolucionesPokemon{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
