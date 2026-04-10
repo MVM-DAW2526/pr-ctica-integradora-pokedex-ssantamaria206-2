@@ -1,6 +1,7 @@
 body{
     background-color: lightgray;
 }
+/*ZONA GRIDS --------------------------------*/
 #InfoPokemon {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -38,4 +39,20 @@ article p{
 .EvolucionesPokemon{
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+}
+/*ZONA FOTO -----------------------*/
+.FotoPokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FotoPokemon img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+.FotoPokemon h2 {
+    font-size: 80px;
+    text-transform: capitalize;
 }
