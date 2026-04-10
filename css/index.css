@@ -55,8 +55,9 @@
 #mainPkmGrid{
     position: absolute;
     margin-top: 150px;
-    width: 100%;
+    width: 80%;
     align-items: center;
+    justify-self: center;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(7 , 1fr);

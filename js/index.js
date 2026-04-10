@@ -16,8 +16,9 @@ fetchPokemonList().then(async (Pokemons) => {
         foto.src = pokemon.sprite;
         const name = document.createElement("p");
         name.textContent = pokemon.name;
-        article.appendChild(foto);
+        article.appendChild(foto); 
         article.appendChild(name);
         CaixaPokemons.appendChild(article);
     });
 });
+
