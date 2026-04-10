@@ -31,7 +31,17 @@ async function fetchPokemonList() {
  * @returns {Promise<Object>}
  */
 async function fetchPokemon(idOrName) {
-    // TODO
+    try {
+        const resposta = await fetch(`${BASE_URL}/pokemon/${idOrName}`);
+
+        if (!resposta.ok) {
+            throw new Error("Error al cargar pokemon");
+        }
+
+        return await resposta.json();
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 /**
