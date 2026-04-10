@@ -11,7 +11,11 @@ fetchPokemonList().then(async (Pokemons) => {
 
     const results = await Promise.all(promises);
     results.forEach(pokemon => {
+        
         const article = document.createElement("article");
+        article.addEventListener("click", () => {
+             window.location.href = `detalls.html?name=${pokemon.name}`;
+        });
         const foto = document.createElement("img");
         foto.src = pokemon.sprite;
         const name = document.createElement("p");
