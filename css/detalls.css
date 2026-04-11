@@ -41,6 +41,11 @@ article p{
     grid-column: 2 / 4;
     grid-row: 3 / 4;
 }
+.TitolCuadre{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
 /*ZONA FOTO -----------------------*/
 .FotoPokemon {
     display: flex;
