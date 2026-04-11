@@ -39,11 +39,13 @@ function crearHabilidades(data){
 
 function crearMovimientos(data){
     const ZonaMovimientos = document.querySelector(".MovimientosPokemon");
-    const missatge = document.createElement("p");
-    missatge.textContent = "No configurat";
-    ZonaMovimientos.appendChild(missatge)
-}
 
+    data.moves.forEach(move => {
+        const p = document.createElement("p");
+        p.textContent = move.move.name;
+        ZonaMovimientos.appendChild(p);
+    });
+}
 function crearEvoluciones(data){
     const ZonaEvoluciones = document.querySelector(".EvolucionesPokemon");
     const missatge = document.createElement("p");
