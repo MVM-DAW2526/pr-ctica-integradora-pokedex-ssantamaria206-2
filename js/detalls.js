@@ -19,10 +19,13 @@ function crearStats(data){
 }
 
 function crearHabilidades(data){
-    const ZonaHabilidades = document.querySelector(".HabilidadesPokemon");
-    const missatge = document.createElement("p");
-    missatge.textContent = "No configurat";
-    ZonaHabilidades.appendChild(missatge)
+    const ZonaHabilidades = document.querySelector(".HabilidadesPokemon"); 
+
+    data.abilities.forEach(habilitat => {
+        const NomHabilitat = document.createElement("p");
+        NomHabilitat.textContent = habilitat.ability.name;
+        ZonaHabilidades.appendChild(NomHabilitat);
+    });
 }
 
 function crearMovimientos(data){
