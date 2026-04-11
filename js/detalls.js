@@ -13,9 +13,18 @@ function crearFoto(data){
 
 function crearStats(data){
     const ZonaStats = document.querySelector(".StatsPokemon");
-    const missatge = document.createElement("p");
-    missatge.textContent = "No configurat";
-    ZonaStats.appendChild(missatge)
+    const vida = document.createElement("p");
+    vida.textContent = "Vida: " + data.stats[0].base_stat;
+    ZonaStats.appendChild(vida);
+    const dany = document.createElement("p");
+    dany.textContent = "Dany: " + data.stats[1].base_stat;
+    ZonaStats.appendChild(dany);
+    const altura = document.createElement("p");
+    altura.textContent = "Alçada: " + data.height;
+    ZonaStats.appendChild(altura);
+    const pes = document.createElement("p");
+    pes.textContent = "Pes: " + data.weight;
+    ZonaStats.appendChild(pes);
 }
 
 function crearHabilidades(data){

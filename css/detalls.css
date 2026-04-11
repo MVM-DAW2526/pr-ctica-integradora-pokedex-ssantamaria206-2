@@ -46,6 +46,10 @@ article p{
     margin-left: 20px;
     margin-top: 20px;
 }
+article p{
+    margin-left: 40px;
+    font-size: 25px;
+}
 /*ZONA FOTO -----------------------*/
 .FotoPokemon {
     display: flex;
